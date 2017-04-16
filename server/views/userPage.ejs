@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>No</td>
+          <td>Email</td>
+        </tr>
+      </thead>
+      <tbody>
+        <%let number = 0%>
+        <%users.forEach((user) => {%>
+          <%number++%>
+          <tr>
+            <td><%= number %></td>
+            <td><%= user.email %></td>
+          </tr>
+        <%})%>
+      </tbody>
+    </table>
+  </body>
+</html>
